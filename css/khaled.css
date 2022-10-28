@@ -1,0 +1,239 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 80px;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.landing {
+    height: 100vh;
+    position: relative;
+    background-image: url("../image/1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.landing::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 /50%);
+}
+.landing .header {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 80px;
+}
+.landing .header h1 {
+    color: rgb(178, 120, 13);
+    margin: 0;
+    font-size: 40px;
+    position: relative;
+    bottom: 10px;
+}
+.landing .header ul {
+    display: flex;
+    padding-top: 5px;
+}
+.landing .header a:not(:first-child) {
+    padding-left: 80px;
+}
+.landing .header a li {
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.landing .header a li:hover {
+    color: rgb(178, 120, 13);
+}
+.landing .header form input[type="search"] {
+    padding: 10px 20px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: transparent;
+    border: 1px solid rgb(178, 120, 13);
+    border-right: none;
+    color: white;
+    height: 40px;
+    width: 250px;
+    font-size: 15px;
+}
+.landing .header form input[type="search"]::placeholder {
+    font-size: 16px;
+    color: white;
+}
+.landing .header form input[type="search"]:focus {
+    outline: none;
+}
+.landing .header form input[type="search"]:hover::placeholder {
+    opacity: 0.3;
+}
+.landing .header form input[type="submit"] {
+    padding: 10px 20px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: none;
+    margin-left: -5px ;
+    background-color: rgb(178, 120, 13);
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    height: 40px;
+    width: 100px;
+}
+.landing .home {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 150px 80px;
+    color: white;
+}
+.landing .title {
+    flex-basis: 45%;
+}
+.landing .title span {
+    font-size: 60px;
+    line-height: 1.2;
+}
+.landing .title .dev{
+    color: rgb(178, 120, 13);
+}
+.landing .title p{
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 40px 0;
+}
+.landing .title a{
+    border-radius: 10px;
+    background-color: rgb(178, 120, 13);
+    color: black;
+    font-size: 17px;
+    padding: 8px 50px;
+}
+.landing .login {
+    flex-basis: 25%;
+    background-color: rgb(0 0 0 /80%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    min-width: 300px;
+}
+.landing .login h2 {
+    color: rgb(178, 120, 13);
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 30px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+.landing .login form{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+.landing .login form input {
+    border: none;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(178, 120, 13);
+    color: white;
+}
+.landing .login form input:focus{
+    outline: none;
+}
+.landing .login form input::placeholder {
+    font-size: 15px;
+    color: white;
+}
+.landing .login form input[type="submit"]{
+    background-color: rgb(178, 120, 13);
+    margin: 20px 20px 0;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+.landing .login .text p,
+.landing .login .text span {
+    font-size: 17px;
+}
+.landing .login .text .sign-up{
+    color: rgb(178, 120, 13);
+}
+.landing .home .social {
+    margin: 20px 40px 0;
+}
+.landing .home .social ul {
+    display: flex;
+    justify-content: space-between;
+}
+.landing .home .social ul li a i {
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.landing .home .social ul li a i:hover {
+    color: rgb(178, 120, 13);
+}
